@@ -93,11 +93,13 @@ module.exports.bulkUpdate = (req, res, next) => {
       const ids = parsedData.map((i) => i.id);
       if (Array.isArray(req.body)) {
         for (user of req.body) {
+          
           const exist = ids.includes(user.id);
           if (exist) {
             const updatedDoc = parsedData.find((d) => d.id === user.id);
             const index = parsedData.indexOf(updatedDoc);
             parsedData[index] = user;
+            console.log(user);
             fs.writeFile("./public/users.json", JSON.stringify(parsedData), (err) => {
               if (err) {
                 next(err);

@@ -1,7 +1,6 @@
 [
-  { "id": 1, "gender": "male", "name": "mofiz", "contact": "mail.mofiz.com", "adress": "Dhaka", "photoUrl": "https://mofiz.png" },
-  { "id": 2, "gender": "male", "name": "nafiz", "contact": "mail.nafiz.com", "adress": "Cumilla", "photoUrl": "https://nafiz.png" },
-  { "id": 3, "gender": "female", "name": "nur nabila", "contact": "mail.nabila.com", "adress": "Dhaka", "photoUrl": "https://nabila.png" },
+  { "id": 1, "gender": "male", "name": "suma", "contact": "mail.sumaiya.com", "adress": "Dhaka", "photoUrl": "https://suma.png" },
+  { "id": 3, "gender": "fefale", "name": "nafiz", "contact": "mail.nafiz.com", "adress": "Cumilla", "photoUrl": "https://nafiz.png" },
   { "id": 4, "gender": "male", "name": "rizvi", "contact": "mail.rizvi.com", "adress": "Dhaka", "photoUrl": "https://rizvi.png" },
   { "id": 5, "gender": "female", "name": "sumi", "contact": "mail.sumi.com", "adress": "Dhaka", "photoUrl": "https://sumi.png" }
 ]
