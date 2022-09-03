@@ -64,7 +64,47 @@ module.exports.updateUser = (req, res, next) => {
         if (err) {
           next(err);
         } else {
-          res.status(200).send({ success: true, message: "user added successfully" });
+          res.status(200).send({ success: true, message: "user updated successfully" });
+        }
+      });
+    }
+  });
+};
+module.exports.bulkUpdate = (req, res, next) => {
+  fs.readFile(`./public/users.json`, (err, data) => {
+    if (err) {
+      next(err);
+    } else {
+      const parsedData = JSON.parse(data);
+      for (user of req.body) {
+        const updatedDoc = parsedData.find((d) => d.id === user.id);
+        const index = parsedData.indexOf(updatedDoc);
+        parsedData[index] = user
+        fs.writeFile("./public/users.json", JSON.stringify(parsedData), (err) => {
+          if (err) {
+            next(err);
+          } else {
+            res.status(200).send({ success: true, message: "user updated successfully" });
+          }
+        });
+      }
+    }
+  });
+};
+module.exports.deleteUser = async (req, res, next) => {
+  fs.readFile(`./public/users.json`, (err, data) => {
+    if (err) {
+      next(err);
+    } else {
+      const parsedData = JSON.parse(data);
+      const updatedDoc = parsedData.find((d) => d.id === parseInt(req.params.id));
+      const index = parsedData.indexOf(updatedDoc);
+      parsedData.splice(index, 1);
+      fs.writeFile("./public/users.json", JSON.stringify(parsedData), (err) => {
+        if (err) {
+          next(err);
+        } else {
+          res.status(200).send({ success: true, message: "user deleted successfully" });
         }
       });
     }

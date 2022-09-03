@@ -1,1 +1,7 @@
-[{"id":1,"gender":"female","name":"janu","contact":"mail.janu.com","adress":"Dhaka","photoUrl":"https://janu.png"},{"id":2,"gender":"male","name":"nafiz","contact":"mail.nafiz.com","adress":"Cumilla","photoUrl":"https://nafiz.png"},{"id":3,"gender":"female","name":"nur nabila","contact":"mail.nabila.com","adress":"Dhaka","photoUrl":"https://nabila.png"},{"id":4,"gender":"male","name":"rizvi","contact":"mail.rizvi.com","adress":"Dhaka","photoUrl":"https://rizvi.png"},{"id":5,"gender":"female","name":"sumi","contact":"mail.sumi.com","adress":"Dhaka","photoUrl":"https://sumi.png"},{"id":6,"gender":"testing","name":"testing","contact":"mail.testing.com","adress":"Dhaka","photoUrl":"https://testing.png"},{"id":7,"gender":"babu","name":"babu","contact":"mail.babu.com","adress":"Dhaka","photoUrl":"https://babu.png"},{"id":8,"gender":"babu","name":"babu","contact":"mail.babu.com","adress":"Dhaka","photoUrl":"https://babu.png"}]
+[
+  { "id": 1, "gender": "male", "name": "mofiz", "contact": "mail.mofiz.com", "adress": "Dhaka", "photoUrl": "https://mofiz.png" },
+  { "id": 2, "gender": "male", "name": "nafiz", "contact": "mail.nafiz.com", "adress": "Cumilla", "photoUrl": "https://nafiz.png" },
+  { "id": 3, "gender": "female", "name": "nur nabila", "contact": "mail.nabila.com", "adress": "Dhaka", "photoUrl": "https://nabila.png" },
+  { "id": 4, "gender": "male", "name": "rizvi", "contact": "mail.rizvi.com", "adress": "Dhaka", "photoUrl": "https://rizvi.png" },
+  { "id": 5, "gender": "female", "name": "sumi", "contact": "mail.sumi.com", "adress": "Dhaka", "photoUrl": "https://sumi.png" }
+]
