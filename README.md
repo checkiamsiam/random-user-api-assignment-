@@ -7,7 +7,7 @@
 - address
 - photoUrl
 
-## I Was perform CRUD operations on the .json file using Express and the file system module. I was required to use the following endpoints to perform the operation:
+## I was perform CRUD operations on the .json file using Express and the file system module. I was required to use the following endpoints to perform the operation:
 
 ### GET /user/random A random user
 
